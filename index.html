@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!--Menu del encabezado-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Lisbeth</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    
+                </ul>
+            </nav>
+            <!--Hacer responsive y agregar icono de menu-->
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
+        </header>
+    </div>
+<!-- SECCION INICIO-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero2.jpg" alt="">
+            </div>
+            <h1>Lisbeth Solorzano</h1>
+            <h2>Ingeniero en sistemas - Programador Jr.</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/profile.php?id=100086395844051"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/lisbethGon81843"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UC5qX6BAAAZyWfkyF0Z2yxTQ"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/lisbeth-solorzano-a801a61a5/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://secure.skype.com/portal/overview"><i class="fa-brands fa-skype"></i></a>
+                <!--<a href="#"><i class="fa-solid fa-rss"></i></a>-->
+            </div>
+        </div>
+    </section>
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mi</h2>
+            <p><span>Hola, Soy Lisbeth Solorzano.</span>Egresada de Universidad Politecnica de Valle del Evora.</p>
+            <div class="fila">
+                <!--DATOS PERSONALES-->
+                <div class="col">
+                    <h3>DATOS PERSONALES</h3>
+                    <ul>
+                        <li>
+                            <strong>EDAD</strong>
+                            45
+                        </li>
+                        <li>
+                            <strong>TELEFONO</strong>
+                            663-240-3537
+                        </li>
+                        <li>
+                            <strong>E-MAIL</strong>
+                            ing.solorzano201578@gmail.com
+                        </li>
+                        <li>
+                            <strong>WEBSITE</strong>
+                            
+                        </li>
+                        <li>
+                            <strong>DIRECCION</strong>
+                            Tijuana B. C.
+                        </li>
+                        <li>
+                            <strong>CARGO</strong>
+                            <span>HOME OFFICE</span> 
+                        </li>
+                    </ul>
+                </div>
+                <!--INTERESES-->
+                <div class="col">
+                    <h3>INTERESES</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <a href="https://es.duolingo.com/"> <i class="fa-solid fa-gamepad"></i></a>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <a href="https://www.youtube.com/watch?v=CFpfqXXsRIc"><i class="fa-solid fa-headphones"></i></a>
+                           <!--<i class="fa-solid fa-headphones"></i>--> 
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                           <a href="https://www.vivaaerobus.com/"><i class="fa-solid fa-plane"></i></a> 
+                            <span>VIAJES</span>
+                        </div>
+                        <div class="interes">
+                            <a href=""><i class="fa-brands fa-apple"></i></a>
+                            <span>MAC OS</span>
+                        </div>
+                        <div class="interes">
+                           <a href="https://www.youtube.com/watch?v=woQwB-OeVu0"><i class="fa-solid fa-person-hiking"></i></a>
+                            <span>DEPORTES</span>
+                        </div>
+                        <div class="interes">
+                            <a href="https://www.youtube.com/watch?v=_kO8W2aP3DU&list=PLf7T0CChCK_sriMUgtC5CQOXrM7RzNklx"><i class="fa-solid fa-book"></i></a>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <a href=""><i class="fa-solid fa-car"></i></a>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                           <a href="fotos.html"><i class="fa-solid fa-camera"></i></a>
+                            <span>FOTOS</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button class="btn-descarga">
+                Descargar CV <a href="CV1.pdf" class="btn-descarga icon-descarga" download="Curriculum" 
+                title="Descargar CV1"><i class="fa-solid fa-download"></i></a>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+    <!--SECCION SKILLS-->
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Habilidades tècnicas</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Asp .Net</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL Server</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>BOOTSTRAP</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Habilidades Profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Gestion de proyectos</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- SECCION CURRICULUM -->
+     <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Estudiando on line</h4>
+                        <span class="casa">English .Net</span>
+                        <span class="fecha">2022 - 2022</span>
+                        <p>Estudiando nivel high school</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Desarrollo de sistemas</h4>
+                        <span class="casa">Universidad Politécnica de Valle del Évora</span>
+                        <span class="fecha">2012 - 2016</span>
+                        <p>Ingeniería en sistemas computacionales</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Informatica</h4>
+                        <span class="casa">CBT'a 116</span>
+                        <span class="fecha">1993 - 1996</span>
+                        <p>Técnico en informatica y físico matematico</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                   
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Programador Jr.</h4>
+                        <span class="casa">Versión & Exportaciones</span>
+                        <span class="fecha">2022 - 2022</span>
+                        <p>Desarrollo de sistemas para control de asistencia de empleados y nomina en lenguaje de C#, Asp .Net core MVC</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Programador Jr.</h4>
+                        <span class="casa">Coppel S.A. de C. V.</span>
+                        <span class="fecha">2016 - 2017</span>
+                        <p>Desarrollo y modificación de sistemas para control de inventario en lenguaje de C# utilizando como gestor de base de datos postgreSql</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Programador</h4>
+                        <span class="casa">Autoempleado</span>
+                        <span class="fecha">2012 - 2016</span>
+                        <p>Diseño e instalación de centro de computo, instalación y configuración de sistema de inventario para abarrotes y formateo de computadoras</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p9.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Tienda en linea</h3>
+                        <p>Carrito de compras</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p1.png" alt="">
+                    <div class="overlay">
+                        <h3>Agenda</h3>
+                        <p>Citas para pacientes</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.png" alt="">
+                    <div class="overlay">
+                        <h3>Administracion de pacientes</h3>
+                        <p>Pacientes</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Phone number">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                   <a href="https://www.google.com/maps/place/Centre+Square,+1500+Market+St+2727+w,+Philadelphia,+PA+19102,+EE.+UU./@39.9521634,-75.1683787,17z/data=!3m1!4b1!4m5!3m4!1s0x89c6c631d57c2da5:0x5a548c38208e73ec!8m2!3d39.9521634!4d-75.16619"></a>
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Tijuana, B. C.
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 663-240-3537 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: ing.solorzano201578@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/profile.php?id=100086395844051"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/lisbethGon81843"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://web.skype.com/"><i class="fa-brands fa-skype"></i></a>
+            <a href="https://www.linkedin.com/in/lisbeth-solorzano-a801a61a5/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.youtube.com/channel/UC5qX6BAAAZyWfkyF0Z2yxTQ"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
